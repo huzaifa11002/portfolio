@@ -1,0 +1,14 @@
+.html{
+    background: rgb(240,101,41);
+background: linear-gradient(90deg, rgba(240,101,41,1) 0%, rgba(41,101,241,1) 100%);
+  }
+ 
+.bootstrap {
+    background: rgb(137,18,252);
+background: linear-gradient(90deg, rgba(137,18,252,1) 0%, rgba(111,16,244,1) 100%);
+}
+.tab-val{
+    background: #c4ef04;
+    border: 2px solid #c4ef04;
+    color: #fff;
+}
