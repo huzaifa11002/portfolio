@@ -7,8 +7,8 @@ const Herosection = () => {
     <>
     <div className="max-w-[1300px] mx-auto flex justify-between items-center my-20">
         <div className="flex flex-col gap-10 text-[#fff] w-1/2">
-          <h1 className="text-3xl font-extrabold">Hello, I'm <span className="text-5xl text-[#c4ef04]">Huzaifa Khan</span></h1>
-          <p className="text-lg font-semibold">Hi, I'm Huzaifa Khan, a passionate frontend developer with a strong foundation in modern web development.
+          <h1 className="text-3xl font-extrabold">Hello, I&apos;m <span className="text-5xl text-[#c4ef04]">Huzaifa Khan</span></h1>
+          <p className="text-lg font-semibold">Hi, I&apos;m Huzaifa Khan, a passionate frontend developer with a strong foundation in modern web development.
              I specialize in building responsive, user-friendly websites using HTML, CSS, JavaScript, and TypeScript, and 
              have experience working with frameworks like React and Next.js.
               My focus is on crafting seamless digital experiences that are both functional and visually engaging.</p>

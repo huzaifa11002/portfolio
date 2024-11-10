@@ -11,8 +11,8 @@ const About = () => {
           </div>
           <div className="flex flex-col gap-5 text-[#fff] w-full">
             <h3 className="text-[#c4ef04] text-xl font-bold">About me</h3>
-            <p className="text-lg leading[2rem]">I'm a frontend web developer with a knack for creating visually appealing and interactive web pages.
-               Over the past year, I've honed my skills in HTML, CSS, and JavaScript, expanding into TypeScript, Tailwind CSS, React, and Next.js
+            <p className="text-lg leading[2rem]">I&apos;m a frontend web developer with a knack for creating visually appealing and interactive web pages.
+               Over the past year, I&apos;ve honed my skills in HTML, CSS, and JavaScript, expanding into TypeScript, Tailwind CSS, React, and Next.js
                 to create more dynamic and efficient projects. I enjoy exploring new technologies and am constantly working to improve my craft, 
                 making websites that are both efficient and engaging for users. My portfolio showcases a variety of projects that highlight my 
                 dedication to clean code and effective design.</p>
