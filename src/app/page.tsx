@@ -3,6 +3,7 @@ import Skills from "./components/skills"
 import About from "./components/about";
 import Contact from "./components/contact";
 import Work from "./components/work";
+import Blog from "./components/blog";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <About/>
       <Skills/>
       <Work/>
+      <Blog/>
       <Contact/>
     </>
   );
