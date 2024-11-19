@@ -11,7 +11,7 @@ const Card = ({title,des,img}:CardProps) => {
     <>
     <div className='rounded shadow-lg bg-white flex flex-col items-center hover:scale-90'>
         <div className="w-full">
-        <Image src={img} alt="card-img" className="w-full aspect-video rounded-e"></Image>
+        <Image src={img} alt="card-img" className="w-full aspect-video rounded-e" width={100} height={100}></Image>
         </div>
         <div className="p-5 flex flex-col items-center">
         <h2 className="text-[#c4ef04] text-lg whitespace-nowrap">{title}</h2>

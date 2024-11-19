@@ -3,9 +3,13 @@ import Image from "next/image";
 import RecentBlog from "@/app/components/recentBlog";
 import Comments from "@/app/components/comments";
 
-const blogPost = ({ params }:any) => {
+interface Params{
+  id:string;
+}
 
-  function generateRemoveSpaceSlug(title) {
+const blogPost = ({params}:{params:Params}) => {
+
+  function generateRemoveSpaceSlug(title:string) {
     return title.replace(/\s+/g, '-').toLowerCase();
   };
 
@@ -22,7 +26,7 @@ const blogPost = ({ params }:any) => {
         <div>
           <div className="flex flex-col gap-10 items-center sm:items-start">
           <div><h1 className="text-center text-2xl font-extrabold text-[#c4ef04] sm:text-3xl md:text-4xl sm:text-start">{findPost.title}</h1></div>
-          <div><Image src={findPost.Image} alt="title-image" className="w-[600px] lg:w-[900px]"></Image></div>
+          <div><Image src={findPost.Image} alt="title-image" className="w-[600px] lg:w-[900px]" width={100} height={100}></Image></div>
           <div className="border-t-2 border-[#c4ef04] text-white py-10 pr-10">{findPost.longDes}</div>
           </div>
           <RecentBlog/>

@@ -2,7 +2,7 @@ import Card from "../components/card";
 import Link from "next/link";
 import blogContent from "../components/blogContent";
 const RecentBlog = () => {
-    function generateRemoveSpaceSlug(title) {
+    function generateRemoveSpaceSlug(title: string) {
         return title.replace(/\s+/g, '-').toLowerCase();
     };
     return (
@@ -15,7 +15,7 @@ const RecentBlog = () => {
                             const slug = generateRemoveSpaceSlug(item.title)
                             return (
                                 <Link href={`/blog/${slug}`} key={index}>
-                                    <Card title={item.title} des={item.des} img={item.Image} longdes={item.longDes} />
+                                    <Card title={item.title} des={item.des} img={item.Image}/>
                                 </Link>
                             )
                         })

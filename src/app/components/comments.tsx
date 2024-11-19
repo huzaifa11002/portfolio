@@ -5,11 +5,12 @@ import { useState } from "react";
 
 const Comments = () => {
 
+
   let [comment, setComment] = useState([]);
   let [commentInput, setCommnetInput] = useState("");
 
   function addComment() {
-    setComment([...comment, { inputItem: commentInput }])
+    setComment([...comment,({ inputItem: commentInput })])
     setCommnetInput("")
   }
 
@@ -21,7 +22,7 @@ const Comments = () => {
           <div className='flex flex-col gap-5'>
             <div className="relative">
               <label className=" absolute z-1 text-[#c4ef04] -top-3 bg-[#232b2b] mx-4 px-1">Comment</label>
-              <textarea value={commentInput} onChange={((e)=> setCommnetInput(e.target.value))} className="w-full h-40 rounded p-3 text-white border-2 border-[#c4ef04] bg-transparent focus-visible:outline-none" placeholder="Add a comment..."></textarea>
+              <textarea value={commentInput} onChange={((e) => setCommnetInput(e.target.value))} className="w-full h-40 rounded p-3 text-white border-2 border-[#c4ef04] bg-transparent focus-visible:outline-none" placeholder="Add a comment..."></textarea>
             </div>
             <div className='flex justify-end'>
               <button onClick={addComment} className="w-fit text-[#232b2b] bg-[#c4ef04] font-bold rounded-3xl border-2 border-[#c4ef04] px-7 py-3 hover:text-[#c4ef04] hover:border-[#c4ef04] hover:bg-transparent float-right">Send</button>
