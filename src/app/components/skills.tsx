@@ -3,6 +3,8 @@ import "./component.css";
 import { useState } from "react";
 const Skills = () => {
 
+
+
     const skillTabs = [
         {
             title: "HTML & CSS",
@@ -34,46 +36,46 @@ const Skills = () => {
 
     return (
         <>
-            <div className="max-w-[1300px] mx-auto my-20">
-                <h2 className="text-4xl text-[#fff] font-semibold text-center uppercase my-5">Skills</h2>
-                <div className="flex justif y-between items-center py-10 gap-40 my-20">
-                    <div className="flex gap-5 flex-col text-[#fff] w-full">
-                        <div className="flex flex-col gap-3">
-                            <h4>HTML & CSS</h4>
-                            <div className="relative w-full h-3 rounded bg-gray-500">
-                                <div className="absolute top-0 left-0 w-[90%] h-3 rounded text-right html"></div>
+            <div className="mx-auto max-w-[90%] xl:w-[1440px] my-20">
+                <h2 className="text-xl md:text-xl lg:text-2xl xl:text-3xl text-[#fff] font-bold text-center uppercase my-10">Skills</h2>
+                <div className="flex flex-col gap-10 sm:flex-row sm:items-center sm:justify-between xl:gap-40 xl:justify-around sm:my-20">
+                    <div className="flex gap-5 flex-col text-[#fff] w-full sm:w-3/12 lg:w-full">
+                        <div className="flex flex-col gap-3 sm:gap-1">
+                            <h4 className="whitespace-nowrap">HTML & CSS</h4>
+                            <div className="relative w-full h-5 rounded bg-gray-500">
+                                <div className="absolute top-0 left-0 w-[90%] h-5 rounded flex items-center justify-end html font-bold">90%</div>
                             </div>
                         </div>
-                        <div className="flex flex-col gap-3">
-                            <h4>JavaScript</h4>
-                            <div className="relative w-full h-3 rounded bg-gray-500">
-                                <div className="absolute top-0 left-0 w-[80%] h-3 rounded bg-[#f0db4f] text-right"></div>
+                        <div className="flex flex-col gap-3 sm:gap-1">
+                            <h4 className="whitespace-nowrap">JavaScript</h4>
+                            <div className="relative w-full h-5 rounded bg-gray-500">
+                                <div className="absolute top-0 left-0 w-[80%] h-5 rounded bg-[#f0db4f] flex items-center justify-end font-bold">80%</div>
                             </div>
                         </div>
-                        <div className="flex flex-col gap-3">
-                            <h4>React & Next Js</h4>
-                            <div className="relative w-full h-3 rounded bg-gray-500">
-                                <div className="absolute top-0 left-0 w-[60%] h-3 rounded bg-[#61dbfb] text-right"></div>
+                        <div className="flex flex-col gap-3 sm:gap-1">
+                            <h4 className="whitespace-nowrap">React & Next Js</h4>
+                            <div className="relative w-full h-5 rounded bg-gray-500">
+                                <div className="absolute top-0 left-0 w-[60%] h-5 rounded bg-[#61dbfb] flex items-center justify-end font-bold">60%</div>
                             </div>
                         </div>
-                        <div className="flex flex-col gap-3">
-                            <h4>Bootstrap</h4>
-                            <div className="relative w-full h-3 rounded bg-gray-500">
-                                <div className="absolute top-0 left-0 w-[70%] h-3 rounded bootstrap text-right"></div>
+                        <div className="flex flex-col gap-3 sm:gap-1">
+                            <h4 className="whitespace-nowrap">Bootstrap</h4>
+                            <div className="relative w-full h-5 rounded bg-gray-500">
+                                <div className="absolute top-0 left-0 w-[70%] h-5 rounded bootstrap flex items-center justify-end font-bold">70%</div>
                             </div>
                         </div>
-                        <div className="flex flex-col gap-3">
-                            <h4>Tailwind CSS</h4>
-                            <div className="relative w-full h-3 rounded bg-gray-500">
-                                <div className="absolute top-0 left-0 w-[60%] h-3 rounded bg-[#06b6d4] text-right"></div>
+                        <div className="flex flex-col gap-3 sm:gap-1">
+                            <h4 className="whitespace-nowrap">Tailwind CSS</h4>
+                            <div className="relative w-full h-5 rounded bg-gray-500">
+                                <div className="absolute top-0 left-0 w-[60%] h-5 rounded bg-[#06b6d4] flex items-center justify-end font-bold">60%</div>
                             </div>
                         </div>
                         <div>
                         </div>
                     </div>
-                    <div>
-                        <div className="bg-white border-gray-500 border-2 rounded-lg p-5 box-border w-[800px]">
-                            <div className="flex flex-row gap-5 py-5 border-b-2">
+                    <div className="sm:contents">
+                        <div className="bg-white border-gray-500 border-2 rounded-lg p-5 box-border w-full sm:w-9/12 lg:w-full">
+                            <div className="flex flex-row gap-5 py-5 border-b-2 overflow-x-auto">
                                 {
                                     skillTabs.map((tab, i) => {
                                         return (
@@ -87,18 +89,18 @@ const Skills = () => {
                                 {
                                     skillTabs.map((data, i) => {
                                         return (
-                                            <div key={i} className={`bg-white border-gray-500 border-2 rounded-lg p-5 box-border w-full h-[235px] my-5 ${activeTab === i ? "" : "hidden"}`}>
+                                            <div key={i} className={`bg-white border-gray-500 border-2 rounded-lg p-5 box-border w-full h-[235px] my-5 overflow-y-auto  ${activeTab === i ? "" : "hidden"}`}>
                                                 <h3 className="text-xl font-bold my-2 text-[#c4ef04]">{data.title}</h3>
-                                                <p>{data.description}</p>
+                                                <p className="text-sm leading-6 lg:leading-8 lg:text-base">{data.description}</p>
                                             </div>
                                         )
                                     })
                                 }
 
                             </div>
-                        </div>
                     </div>
                 </div>
+            </div>
         </>
     )
 };
