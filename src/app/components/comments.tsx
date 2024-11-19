@@ -5,8 +5,11 @@ import { useState } from "react";
 
 const Comments = () => {
 
+  interface commentSet {
+    inputItem: string;
+  }
 
-  let [comment, setComment] = useState([]);
+  let [comment, setComment] = useState<commentSet[]>([]);
   let [commentInput, setCommnetInput] = useState("");
 
   function addComment() {
